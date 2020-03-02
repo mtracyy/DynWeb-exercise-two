@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.SiteWrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 25px;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home {
+    margin: 0 auto;
+    max-width: 640px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home h1 {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.WeatherInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.WeatherInfo_Image {
+    flex-basis: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.WeatherInfo_Data {
+    flex-basis: 50%;
+}
+
+.WeatherInfo_Data .CurrentTemperature .CurrentTemperatureTemp {
+    font-size: 140px;
+    font-weight: bold;
+    line-height: 140px;
+    margin: 0;
+}
+
+.WeatherInfo_Data .CurrentTemperature .CurrentTemperatureLabel {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.OtherTemperatures p {
+    font-size: 24px;
+    line-height: 24px;
 }
