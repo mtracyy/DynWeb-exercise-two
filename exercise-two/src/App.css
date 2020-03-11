@@ -12,6 +12,7 @@
 
 .Home h1 {
     text-align: center;
+    text-transform: capitalize;
 }
 
 .WeatherInfo {
@@ -22,6 +23,7 @@
 
 .WeatherInfo_Image {
     flex-basis: 50%;
+    font-size: 100px;
 }
 
 .WeatherInfo_Data {
@@ -47,3 +49,52 @@
     font-size: 24px;
     line-height: 24px;
 }
+
+.Header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CitiesNav {
+    display: flex;
+}
+
+.CitiesNav a {
+    border-bottom: 1px solid transparent;
+    color: #000000;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: border-bottom 500ms ease;
+}
+
+.CitiesNav a:hover {
+    border-bottom: 1px solid black;
+}
+
+.CitiesNav .active {
+    color: cadetblue;
+}
+
+.WeatherWrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 10px 25px 20px 25px;
+    width: 100%;
+}
+
+/*body {*/
+    /*font-size: 16px;*/
+/*}*/
+
+/*main {*/
+    /*font-size: 24px;*/
+/*}*/
+
+/*div {*/
+    /*font-size: 1.5rem;*/
+    /*line-height: 1rem;*/
+/*}*/
