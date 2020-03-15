@@ -6,7 +6,6 @@ import WeatherImage from "../components/WeatherImage";
 
 //API Key
 const defaultKey = "98387b5ecfc7a23f50ccd2becb2faa10";
-// const [currentTemperature, setCurrentTemperature] = useState('');
 
 function Home() {
     const [weatherData, setWeatherData] = useState({});
@@ -52,16 +51,15 @@ function Home() {
            setCurrentHumidity(weatherData.main.humidity);
            setCurrentWind(weatherData.wind.speed);
 
-           let cloudinessValue = weatherData.clouds.all/200;
+           let cloudinessValue = weatherData.clouds.all/250;
            setCloudiness(cloudinessValue);
 
            setWeatherType(weatherData.weather[0].main);
-           console.log(weatherType, "weatherType");
        }
     }, [weatherData]);
 
     return (
-        <div className="WeatherWrapper" style={{backgroundColor: `rgba(0, 50, 110, ${cloudiness})`}}>
+        <div className="WeatherWrapper" style={{backgroundColor: `rgba(0, 80, 110, ${cloudiness})`}}>
             <div className="Home">
                 <h1>Weather in {city}</h1>
                 <div className="WeatherInfo">
